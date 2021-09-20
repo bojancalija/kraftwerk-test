@@ -1,0 +1,59 @@
+@import 'abstract/reset';
+@import 'abstract/config';
+@import 'third-party/slick';
+@import 'third-party/slick-theme';
+
+// SHARED CODE ACROSS SITE BELOW
+body {
+    font-family: $font-stack;
+}
+
+html {
+    &.form-page {
+        height: 100%;
+        
+        body,
+        .viewport {
+            height: 100%;     
+        } 
+    }
+}
+
+.viewport {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-blog {
+    margin-bottom: 10px;
+}
+
+.link {
+    color: $primary-color;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
+@import 'pages/form';
+@import 'pages/blog';
+@import 'layout';
+@import 'components/button';
+@import 'components/radio-button';
+@import 'components/checkbox';
+@import 'components/slide-content';

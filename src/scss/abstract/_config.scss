@@ -1,0 +1,50 @@
+// SHRED CONFIG
+$primary-color: #EB690A !default;
+$secondary-color: #AE3700;
+
+$img-path: '../images/';
+
+$background-color: #ecf1f5;
+
+$font-stack: Arial, Helvetica, sans-serif;
+
+$border-color: #ccc;
+
+// BUTTONS CONFIG
+$btn-bg-color: linear-gradient(to right, $secondary-color, $primary-color);
+$btn-text-color: white;
+$btn-border-color: null;
+
+$btn-font-size: 18px;
+$btn-font-family: $font-stack;
+$btn-font-weight: 600;
+$btn-line-heigt: 1;
+
+$btn-padding: 10px 50px;
+$btn-border-radius: 4px;
+$btn-min-width: 100px;
+$btn-border-width: 0;
+$btn-border-style: null;
+
+$btn-hover-bg-color: linear-gradient(to right, $primary-color, $secondary-color );
+$btn-focus-bg-color: $btn-hover-bg-color;
+
+// INPUT SELECT TEXTAREA
+$input-border-color: $border-color;
+$input-padding: 6px;
+$input-border-radius: 4px;
+$input-font-size: 16px;
+
+// RADIO
+$radio-height: 25px;
+$radio-width: 26px;
+$radio-padding: 10px 10px 0 0;
+$radio-bg: url('#{$img-path}radio.png') no-repeat;
+$radio-bg-checked: url('#{$img-path}radio-checked.png') no-repeat;
+
+// CHECKBOX
+$checkbox-height: 25px;
+$checkbox-width: 25px;
+$checkbox-padding: 10px 10px 0;
+$checkbox-bg: url('#{$img-path}checkbox.png') no-repeat;
+$checkbox-bg-checked: url('#{$img-path}checkbox-checked.png') no-repeat;

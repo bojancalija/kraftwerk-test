@@ -1,0 +1,50 @@
+.form__group__inner {
+    display: flex;
+  
+    > p {
+      margin: 5px 0;
+      font-weight: bold;
+      font-size: 14px;
+
+        > span {
+            color: $primary-color;
+        }
+    }
+  }
+
+.checkbox_wrapper{
+    position: relative;
+    height: $checkbox-height;
+    width: $checkbox-width;
+}
+  
+input[type="checkbox"] {
+    opacity: 0;
+    height: $checkbox-height;
+    width: $checkbox-width;
+    position: relative;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 2;
+
+    + label {
+        background: $checkbox-bg;
+        height: $checkbox-height;
+        width: $checkbox-width;
+        display: inline-block;
+        padding: $checkbox-padding;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    &:checked + label {
+        background: $checkbox-bg-checked;
+        height: $checkbox-height;
+        width: $checkbox-width;
+        display: inline-block;
+        padding: $checkbox-padding;
+    }
+}

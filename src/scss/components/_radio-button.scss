@@ -1,0 +1,48 @@
+.input-container {
+    display: flex;
+    margin-bottom: 10px;
+
+    > p {
+        margin: 5px 10px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+  }
+
+.radio_wrapper{
+    position: relative;
+    height: 16px;
+    width: 17px;
+  }
+
+input[type="radio"] {
+    opacity: 0;
+    height: $radio-height;
+    width: $radio-width;
+    position: relative;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 2;
+
+    + label {
+        background: $radio-bg;
+        height: $radio-height;
+        width: $radio-width;
+        display: inline-block;
+        padding: $radio-padding;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    &:checked + label {
+        background: $radio-bg-checked;
+        height: $radio-height;
+        width: $radio-width;
+        display: inline-block;
+        padding: $radio-padding;
+    }
+}
+

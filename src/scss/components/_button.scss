@@ -1,0 +1,24 @@
+button {
+    background: $btn-bg-color;
+    color: $btn-text-color;
+    font-size: $btn-font-size;
+    font-family: $btn-font-family;
+    font-weight: $btn-font-weight;
+    padding: $btn-padding;
+    min-width: $btn-min-width;
+    border-color: $btn-border-color;
+    border-width: $btn-border-width;
+    border-style: $btn-border-style;
+    border-radius: $btn-border-radius;
+    cursor: pointer;
+    transition: background-color 2050ms ease-in-out;
+
+    
+    &:hover {
+        background: $btn-hover-bg-color;
+    }
+
+    &:focus {
+        background: $btn-focus-bg-color;
+    }
+}
